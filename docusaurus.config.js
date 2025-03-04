@@ -11,8 +11,8 @@ import { themes as prismThemes } from "prism-react-renderer";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Ebel",
-  tagline: "Dinosaurs are cool",
-  favicon: "img/favicon.ico",
+  tagline: "",
+  favicon: "img/favicon-32x32.png",
 
   // Set the production url of your site here
   url: "https://eightbit-el.github.io/",
@@ -45,8 +45,8 @@ const config = {
           sidebarPath: "./sidebars.js",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          // editUrl:
+          //   "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         blog: {
           showReadingTime: true,
@@ -70,23 +70,30 @@ const config = {
     ],
   ],
 
+  scripts: [
+    {
+      src: '/EBEL/js/guardian.js',
+      async: false,
+    },
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: "My Site",
+        title: "EBEL",
         logo: {
           alt: "My Site Logo",
-          src: "img/logo.svg",
+          src: "img/android-chrome-256x256.png",
         },
         items: [
           // {
           //   type: "docSidebar",
-          //   sidebarId: "tutorialSidebar",
+          //   sidebarId: "securitySidebar",
           //   position: "left",
-          //   label: "Tutorial",
+          //   label: "セキュリティ研修",
           // },
           // { to: "/blog", label: "Blog", position: "left" },
           // {
@@ -99,47 +106,47 @@ const config = {
       footer: {
         style: "dark",
         links: [
-          {
-            title: "Docs",
-            items: [
-              {
-                label: "Tutorial",
-                to: "/docs/intro",
-              },
-            ],
-          },
-          {
-            title: "Community",
-            items: [
-              {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              },
-              {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
-              },
-              {
-                label: "X",
-                href: "https://x.com/docusaurus",
-              },
-            ],
-          },
-          {
-            title: "More",
-            items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
-              {
-                label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
-              },
-            ],
-          },
+          // {
+          //   title: "Docs",
+          //   items: [
+          //     {
+          //       label: "Tutorial",
+          //       to: "/docs/intro",
+          //     },
+          //   ],
+          // },
+          // {
+          //   title: "Community",
+          //   items: [
+          //     {
+          //       label: "Stack Overflow",
+          //       href: "https://stackoverflow.com/questions/tagged/docusaurus",
+          //     },
+          //     {
+          //       label: "Discord",
+          //       href: "https://discordapp.com/invite/docusaurus",
+          //     },
+          //     {
+          //       label: "X",
+          //       href: "https://x.com/docusaurus",
+          //     },
+          //   ],
+          // },
+          // {
+          //   title: "More",
+          //   items: [
+          //     {
+          //       label: "Blog",
+          //       to: "/blog",
+          //     },
+          //     {
+          //       label: "GitHub",
+          //       href: "https://github.com/facebook/docusaurus",
+          //     },
+          //   ],
+          // },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} EIGHTBITCo.,Ltd. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
