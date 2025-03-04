@@ -72,7 +72,7 @@ const config = {
 
   scripts: [
     {
-      src: '/EBEL/js/guardian.js',
+      src: '/ebel/js/guardian.js',
       async: false,
     },
   ],
